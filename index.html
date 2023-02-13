@@ -4,8 +4,9 @@
     <head>
 
         <title>Booki, pour des vacances de rêve!</title>
-        <link rel="stylesheet" href="style.css"> 
-
+        <link rel="stylesheet" href="style.css"> <!--feuille de style CSS-->
+        <script src="https://kit.fontawesome.com/a2f3f1d3fb.js" crossorigin="anonymous"></script> <!--lien pour le kit d'icônes-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="keywords" content="voyage, hébergement, activités">
         <meta name="author" content="Marlène DIAZ">
@@ -18,25 +19,53 @@
         <header>
             <!-- insérer ici le logo-->
             <img src="Images Booki/logo/Booki.png" alt="Logo Booki" class="logo">
-            <!-- la liste à puces à structurer
-            <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
-            </ul>
-             -->
-
+            <!-- Le menu de navigation -->
+            <nav>
+                   <a href="#accomodations"> Hébergements </a>
+                   <a href="#activities"> Activités </a> 
+            </nav>      
         </header>
         
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre-ville ou en pleine nature</h2>
+        <main>
+
+        <!--Titles-->
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre-ville ou en pleine nature</h2>
 
         <!--Section recherche (formulaire)-->
+        <section class="search">
+            <i class="location fa-solid fa-location-dot"></i>
+            <input type="search" id="search-input" name="search-input" value="Marseille, France">
+            <button class="search-button">Rechercher</button>
+        </section>
+
         <!--Section filtres-->
+        <!--<section class="filters">
+        <h3 class="filters-title">Filtres</h3>
+            <div class="thrifty">Economique</div>
+                <i class="money fa-solid fa-money-bill-wave">
+                
+            <div class="familial">
+                <i class="money fa-solid fa-money-bill-wave"></i>
+                Familial
+            </div>
+            <div class="romantic">Romantique</div>
+            <div class="pets-allowed">Animaux autorisés</div>
+        </section>-->
 
         <p>Plus de 500 logement sont disponibles dans cette ville</p>
 
-        <main>
-            <section></section><!-- ici la partie hébergements à marseille-->
+        
+            <section><!-- ici la partie hébergements à marseille-->
+                <h3>Hébergements à Marseille</h3>
+                <p>Auberge La Canebière</p>
+                <p>Nuit à partir de 25€</p>
+                <i class="fa-solid fa-star">s</i>
+                <i class="fa-duotone fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fas fa-cat"></i>
+                <span class="fa-solid fa-user"></span>
+            </section>
             <article></article><!--ici la partie les plus populaires-->
             <section></section><!--ici la partie portant sur les activités-->
         </main>
