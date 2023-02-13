@@ -1,8 +1,91 @@
-.logo {
-    width: 61.09px;
-    height: 19px;
-}
+
+
 footer ul {
     list-style-type: none;
 
 }
+
+body {
+    font-family: "Raleway";
+    padding-left: 28px;
+}
+
+/* HEADER */
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 20px 60px 10px;
+}
+/*taille du logo*/
+.logo {
+    width:61px;
+    height:19px;
+}
+/* Menu navigation */
+nav a {
+    text-decoration:none;
+    color:black;
+    padding:56px 35px;
+}
+ nav a:hover{
+    border-top:3px solid #0065FC;
+    color:#0065FC;
+}
+
+main {
+    padding-left: 10px;
+}
+
+/*h1 & h2 shaping*/
+h1 {
+    font-size: 20px;
+    font-weight:900;
+    line-height: 25px;
+} /* à revoir car malgré un bold max h1 n'est pas aussi gras que la maquette !*/
+h2 {
+    font-size:14px;
+    font-weight: 100;
+    line-height: 16px;
+}
+
+/* search section */
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items:stretch;
+    margin-top: 25px;
+}
+.location {
+    background-color: #D9D9D9;
+    padding: 12px 15px;
+    border-radius: 15px 0 0 15px;
+}
+#search-input {
+    border:1px solid #D9D9D9;
+    border-right-color: #0065FC;
+    padding-left:8px;   
+}
+.search-button {
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0 15px 15px 0;
+    padding: 12px 15px;
+    font-size: 600;
+}
+
+/*filter section*/
+.filters {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.filters-title {
+    padding-left:4px;
+    padding-right:10px;
+}
+
+
+
+
