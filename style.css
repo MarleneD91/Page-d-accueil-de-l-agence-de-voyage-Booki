@@ -12,10 +12,24 @@ body {
     font-family: "Raleway";
 }
 
-.fa-star {
-    font-family: "Font Awesome";
-}
 
-h1 {
-    color:brown;
+
+
+/* HEADER */
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+/* Menu navigation */
+nav a {
+    text-decoration:none;
+    color:black;
+    padding:56px 35px;
+}
+ nav a:hover{
+    border-top:3px solid #0065FC;
+    color:#0065FC;
 }
