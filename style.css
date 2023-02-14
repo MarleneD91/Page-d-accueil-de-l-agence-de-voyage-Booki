@@ -5,10 +5,12 @@ footer ul {
 
 }
 
+/* GENERAL CSS RULES */
 body {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     padding-left: 28px;
 }
+
 
 /* HEADER */
 header {
@@ -17,44 +19,48 @@ header {
     justify-content: space-between;
     padding: 50px 20px 60px 10px;
 }
-/*taille du logo*/
+/* Logo size */
 .logo {
     width:61px;
     height:19px;
 }
-/* Menu navigation */
+/* Nav menu */
 nav a {
     text-decoration:none;
     color:black;
     padding:56px 35px;
+    font-size:13px;
+    font-weight:500;
 }
  nav a:hover{
     border-top:3px solid #0065FC;
     color:#0065FC;
 }
 
+/*MAIN PADDING LEFT*/
 main {
     padding-left: 10px;
 }
 
-/*h1 & h2 shaping*/
+/*h1 & h2 SHAPING*/
 h1 {
-    font-size: 20px;
-    font-weight:900;
+    font-size: 22px;
+    font-weight:700;
     line-height: 25px;
-} /* à revoir car malgré un bold max h1 n'est pas aussi gras que la maquette !*/
+}
 h2 {
-    font-size:14px;
-    font-weight: 100;
-    line-height: 16px;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
-/* search section */
+/* SEARCH SECTION */
 .search {
     display: flex;
     justify-content: flex-start;
     align-items:stretch;
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 12px;
 }
 .location {
     background-color: #D9D9D9;
@@ -64,7 +70,10 @@ h2 {
 #search-input {
     border:1px solid #D9D9D9;
     border-right-color: #0065FC;
-    padding-left:8px;   
+    padding-left:10px;
+    width: 210px; 
+    font-weight: 500; 
+    font-size:15px; 
 }
 .search-button {
     color: white;
@@ -72,18 +81,20 @@ h2 {
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
     padding: 12px 15px;
-    font-size: 600;
+    font-weight: 600;
 }
 
-/*filter section*/
+/*FILTERS SECTION*/
 .filters {
     display:flex;
     justify-content:flex-start;
     align-items:center;
+    line-height: 15px;
+    font-size: 14px;
 }
 .filters-title {
-    padding-left:4px;
-    padding-right:10px;
+    font-weight: 600;
+    font-size: 15px;
 }
 .filters-list {
     display:flex;
@@ -92,8 +103,8 @@ h2 {
 }
 .filters-list li {
     padding: 12px 15px;
-    margin:11px;
-    border:1px solid #D9D9D9;
+    margin: 20px;
+    border:2px solid #D9D9D9;
     border-radius: 25px;
     font-weight: 600;
 }
@@ -101,12 +112,18 @@ h2 {
     color:#0065FC;
     margin-right: 8px;
 }
+/*mouse hover : light blue background*/
+.filters-list li:hover{
+    background-color: #DEEBFF;
+}
 
-/*infobar*/
+/*INFOBAR*/
 .infobar {
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    font-weight: 400;
+    font-size: 14px;
 }
 .info-icon {
     color:#0065FC;
@@ -117,6 +134,45 @@ h2 {
     margin-right: 10px; 
 }
 
-/*Accomodations*/
+/*ACCOMODATION*/
+.accomodations {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+.accomodations-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+/* Shaping of cards */
+.cards {
+    background-color: white;
+    box-shadow: 13px;
+    border-radius: 18px;
+    padding: 5px;
+    margin: 16px;
+    display:flex;
+    height: 350px;
+    width: 280px;
+    flex-direction: column;
+}
+.cards img {
+    height: 100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 15px 15px 0 0;
+}
+.options {
+    margin-left:
+}
+/* Notation stars shaping & alignment */
+.notation .blue-star {
+    color:#0065FC;
+}
+.notation .grey-star {
+    color:#D9D9D9;
+}
 
 

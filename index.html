@@ -6,7 +6,7 @@
         <title>Booki, pour des vacances de rêve!</title>
         <link rel="stylesheet" href="style.css"> <!--feuille de style CSS-->
         <script src="https://kit.fontawesome.com/a2f3f1d3fb.js" crossorigin="anonymous"></script> <!--lien pour le kit d'icônes-->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="keywords" content="voyage, hébergement, activités">
         <meta name="author" content="Marlène DIAZ">
@@ -17,49 +17,139 @@
     <body>
 
         <header>
-            <!-- insérer ici le logo-->
+            <!-- Booki logo -->
             <img src="Images Booki/logo/Booki.png" alt="Logo Booki" class="logo">
-            <!-- Le menu de navigation -->
+            <!-- Nav menu -->
             <nav>
                    <a href="#accomodations"> Hébergements </a>
                    <a href="#activities"> Activités </a> 
             </nav>      
         </header>
         
+        <!-- Main part of the web page -->
         <main>
 
-        <!--Titles-->
+            <!--Titles-->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre-ville ou en pleine nature</h2>
 
-        <!--Section recherche (formulaire)-->
-        <section class="search">
-            <i class="location fa-solid fa-location-dot"></i>
-            <input type="search" id="search-input" name="search-input" value="Marseille, France">
-            <button class="search-button">Rechercher</button>
-        </section>
-
-        <!--Section filtres-->
-        <section class="filters">
-            <h3 class="filters-title">Filtres</h3>
-            <ul class="filters-list">
-                <li><i class="f-icon fa-solid fa-money-bill-wave"></i>Economique</li>
-                <li><i class="f-icon fa-solid fa-person"></i>Familial</li>
-                <li><i class="f-icon fa-solid fa-heart"></i>Romantique</li>
-                <li><i class="f-icon fa-solid fa-dog"></i>Animaux autorisés</li>
-            </ul>
-        </section>
-        
-        <div class="infobar">
-            <i class="info-icon fa-solid fa-info"></i>
-            <p>Plus de 500 logement sont disponibles dans cette ville</p>
-        </div>
-        
-        <section class="accomodations"><!-- ici la partie hébergements à marseille-->
-                <h4>Hébergements à Marseille</h4>
-                <p>Auberge La Canebière</p>
-                <p>Nuit à partir de 25€</p>
+            <!--Search section (input form)-->
+            <section class="search">
+                <i class="location fa-solid fa-location-dot"></i>
+                <input type="search" id="search-input" name="search-input" value="Marseille, France">
+                <button class="search-button">Rechercher</button>
             </section>
+
+            <!--Filters section-->
+            <section class="filters">
+                <h3 class="filters-title">Filtres</h3>
+                <ul class="filters-list">
+                    <li><i class="f-icon fa-solid fa-money-bill-wave"></i>Economique</li>
+                    <li><i class="f-icon fa-solid fa-person"></i>Familial</li>
+                    <li><i class="f-icon fa-solid fa-heart"></i>Romantique</li>
+                    <li><i class="f-icon fa-solid fa-dog"></i>Animaux autorisés</li>
+                </ul>
+            </section>
+        
+            <!-- Infobar -->
+            <div class="infobar">
+                <i class="info-icon fa-solid fa-info"></i>
+                <p>Plus de 500 logement sont disponibles dans cette ville</p>
+            </div>
+            
+        
+            <!-- Accomodations (in Marseille) -->
+            <section class="accomodations">
+                <h4>Hébergements à Marseille</h4>
+                <div class="accomodations-cards">
+                    <div class="cards">
+                        <img src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="options">
+                            <h4>Auberge La Canebière</h4>
+                            <p>Nuit à partir de 25€</p>
+                            <div class="notation">
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="grey-star fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="options">
+                            <h4>Hôtel du port</h4>
+                            <p>Nuit à partir de 52€</p>
+                            <div class="notation">
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="grey-star fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="cards">
+                        <img src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="options">
+                            <h4>Hôtel Les mouette</h4>
+                            <p>Nuit à partir de 76€</p>
+                            <div class="notation">
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="grey-star fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="options">
+                            <h4>Hôtel de la mer</h4>
+                            <p>Nuit à partir de 46€</p>
+                            <div class="notation">
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="grey-star fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="cards">
+                        <img src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="options">
+                            <h4>Auberge Le Panier</h4>
+                            <p>Nuit à partir de 23€</p>
+                            <div class="notation">
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="grey-star fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="cards">
+                        <img src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="options">
+                            <h4>Hôtel chez Amina</h4>
+                            <p>Nuit à partir de 96€</p>
+                            <div class="notation">
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="blue-star fa-solid fa-star"></i>
+                                <i class="grey-star fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <p class="more">Afficher plus</p>
+            </section>
+
             <article></article><!--ici la partie les plus populaires-->
             <section></section><!--ici la partie portant sur les activités-->
         </main>
