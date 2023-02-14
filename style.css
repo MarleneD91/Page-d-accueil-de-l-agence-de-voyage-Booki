@@ -1,16 +1,42 @@
-
-
-footer ul {
-    list-style-type: none;
-
-}
-
-/* GENERAL CSS RULES */
+/* COMMON STYLES */
+/* Body */
 body {
     font-family: "Raleway", sans-serif;
     padding-left: 28px;
 }
-
+/* Titles h1 to h6 */
+h1 {
+    font-size: 22px;
+    font-weight:700;
+    line-height: 25px;
+}
+h2 {
+    font-size:16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+h3 {
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 14px;
+    margin-bottom: 7px;
+}
+h4 {
+    font-size: 14px;
+    margin-top:none;
+    padding-top:none;
+}
+h5 {
+    line-height: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+/* Links */
+a {
+    text-decoration:none;
+    color:black;
+}
 
 /* HEADER */
 header {
@@ -26,8 +52,6 @@ header {
 }
 /* Nav menu */
 nav a {
-    text-decoration:none;
-    color:black;
     padding:56px 35px;
     font-size:13px;
     font-weight:500;
@@ -37,21 +61,9 @@ nav a {
     color:#0065FC;
 }
 
-/* MAIN PADDING */
+/* MAIN VALUES */
 main {
     padding: 0 10px 0 10px;
-}
-
-/*h1 & h2 SHAPING*/
-h1 {
-    font-size: 22px;
-    font-weight:700;
-    line-height: 25px;
-}
-h2 {
-    font-size:16px;
-    font-weight: 400;
-    line-height: 18px;
 }
 
 /* SEARCH SECTION */
@@ -134,79 +146,26 @@ h2 {
     margin-right: 10px; 
 }
 
-/* MOST POPULAR + ACCOMODATIONS BLOC CONTAINER */
+/* !MOST POPULAR + ACCOMODATIONS! BLOC CONTAINER & COMMON VALUES */
 .cards-blocs-container {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    
-}
-/* ACCOMODATIONS */
-.accomodations {
-    background-color: #D9D9D9;
-    border-radius: 15px;
-    padding: 15px;
+    margin-bottom: 35px;
     margin-top: 20px;
-    width: 60%;
 }
-.accomodations-cards-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    grid-template-rows: auto auto;
-    margin:16px;
-}
-/* Accomodations title and 'more' shaping */
-h4 {
-    margin-left: 15px;
-    font-weight: 700;
-    font-size: 18px;
-}
-.more {
-    font-weight: 600;
-    margin: 20px;
-}
-
-/* Shaping of cards */
-.accomodations-cards {
-    background-color: white;
-    box-shadow: 8px 8px 8px #afaeae;
-    transition: 0.3s;
-    border-radius: 18px;
-    padding: 5px;
-    margin: 16px;
-    display:flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    
-}
-/* Image */
-.accomodations-cards img {
-    height:125px;
-    width:100%;
-    object-fit: fill;
-    border-radius: 15px 15px 0 0;
-}
-/* Options */
-.accomodations-options {
-    margin-left: 5px;
-    line-height: 10px;
-    padding : 4px;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
-}
-.options h5{
-    margin:none;
-    padding:none;
-    ;
-}
-.options p{
+/* Price p shaping*/
+.price {
     font-size: 12px;
+    font-weight: 500;
 }
-
 /* Notation stars shaping & alignment */
+.notation {
+    font-size:12px;
+    display:flex;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
 .notation .blue-star {
     color:#0065FC;
 }
@@ -214,17 +173,86 @@ h4 {
     color:#D9D9D9;
 }
 
+/* ACCOMODATIONS */
+.accomodations {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 15px;
+    width: 60%;
+    height:fit-content ;
+}
+.accomodations-cards-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-template-rows: 50% 50%;
+    object-fit: contain;
+    margin:12px 6px 25px 6px;
+}
+
+/* Shaping cards */
+.accomodations-cards {
+    background-color: white;
+    box-shadow: 6px 6px 6px #afaeae;
+    transition: 0.3s;
+    border-radius: 18px;
+    padding: 5px;
+    margin: 10px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/* Images */
+.accomodations-cards img {
+    height:100px;
+    width:100%;
+    object-fit: fill;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+/* Options */
+.accomodations-options {
+    margin-top:none;
+    padding-top:none;
+    margin-left: 5px;
+    line-height: 2px;
+    padding : 2px;
+}
+
+/* display more button*/
+.more p{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
 /* MOST POPULAR SECTION */
 .popular {
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 15px;
-    margin-top: 20px;
     width: 30%;
 }
-.popular-cards-container {
+/* Title + icon */
+.popular-title-and-icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px 0 15px;
+    align-items: baseline;
+}
+.graph-icon {
+    color:#0065FC;
+    font-size: 16px;
+}
+/* Cards */
+.popular-cards-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
     justify-content: space-evenly;
     align-content: space-evenly;
     margin:16px;
@@ -238,9 +266,8 @@ h4 {
     padding: 5px;
     margin: 16px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
-    
 }
 /* Image */
 .popular-cards img {
@@ -254,23 +281,29 @@ h4 {
 .activities {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top:25px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top:10px;
 }
 .activities-cards {
     margin: 16px;
-    box-shadow: 8px 8px 8px #afaeae;
-    transition: 0.3s;
+    box-shadow: 6px 6px 6px #afaeae;
     border-radius: 18px;
+    height:372px;
+    width:272px;
 }
 /* Image */
 .activities-cards img {
-    height:80%;
+    height:322px;
     width:100%;
-    object-fit: fill;
+    object-fit:fill;
     border-radius: 15px 15px 0 0;
 }
-
+.activities h4 {
+    margin-left: 8px;
+    line-height: 2px;
+    padding : 2px;
+}
 
 /*FOOTER*/
 footer {
@@ -285,9 +318,5 @@ footer {
 }
 footer ul {
     width:30%;
-}
-h6 {
-    line-height: none;
-    font-weight: 600;
-    font-size: 14px;
+    list-style-type: none;
 }
