@@ -95,6 +95,10 @@ main {
     padding: 12px 15px;
     font-weight: 600;
 }
+.search-icon {
+    color:#0065FC;
+    display: none;
+}
 
 /*FILTERS SECTION*/
 .filters {
@@ -200,7 +204,7 @@ main {
     display:flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 170px;
+    height: 173px;
     width: 205px;
     
 }
@@ -219,8 +223,7 @@ main {
     padding-top:none;
     margin-left: 5px;
     line-height: 2px;
-    padding : 2px;
-    object-fit:fill;
+    padding : 2px 2px 4px 2px;
 }
 
 /* display more button*/
@@ -249,7 +252,7 @@ main {
 }
 .graph-icon {
     color:#0065FC;
-    font-size: 16px;
+    font-size: 1em;
 }
 /* Cards */
 .popular-cards-container {
@@ -269,7 +272,6 @@ main {
     display:flex;
     justify-content: space-between;
     flex-direction: row;
-    object-fit: fill;
     height: 120px;
 }
 /* Image */
@@ -282,19 +284,27 @@ main {
 .popular-options {
     display:flex;
     flex-direction: column;
-    margin-top:none;
-    padding-top:none;
+    justify-content: space-between;
     margin-left: 5px;
     line-height: 1em;
-    padding : 2px;
 }
-.options-caption {
+.options-captions {
+    display:flex;
+    flex-direction: column;
     justify-content: flex-start;
+    flex-basis: 15px;
+    /*line-height: 2px;
+    padding-bottom: none;
+    margin-bottom: none;*/
 }
 
 
 
 /* ACTIVITIES SECTION */
+.activities-container {
+    padding-left: none;
+    margin-left: none;
+}
 .activities {
     display: flex;
     flex-direction: row;
@@ -337,4 +347,5 @@ footer {
 footer ul {
     width:30%;
     list-style-type: none;
+    padding-left: none;
 }
