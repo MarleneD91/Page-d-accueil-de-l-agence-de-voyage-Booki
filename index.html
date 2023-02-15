@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="voyage, hébergement, activités">
         <meta name="author" content="Marlène DIAZ">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-width=1400px">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-width=1400px, min-width=992px">
 
     </head>
 
@@ -34,11 +34,12 @@
             <h2>En plein centre-ville ou en pleine nature</h2>
 
             <!--Search section (input form)-->
-            <div class="search">
+            <form action="/search-inputs" class="search">
                 <i class="location fa-solid fa-location-dot"></i>
                 <input type="search" id="search-input" name="search-input" value="Marseille, France">
                 <button class="search-button"><i class="search-icon fa-solid fa-magnifying-glass"></i>Rechercher</button>
-            </div>
+            </form>
+            
 
             <!--Filters section-->
             <section class="filters">
@@ -67,8 +68,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
                             <div class="accomodations-options">
-                                <h4>Auberge La Canebière</h4>
-                                <p class="price">Nuit à partir de 25€</p>
+                                <div class="options-captions">
+                                    <h4>Auberge La Canebière</h4>
+                                    <p class="price">Nuit à partir de 25€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -229,7 +232,7 @@
             
             <section class="activities-container">
                 <h3>Activités à Marseille</h3>
-                <div class="activities">
+                <div class="activities" id="activities">
                     <a href="#Vieux-Port">
                         <div class="activities-cards">
                             <img src="Images-Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
