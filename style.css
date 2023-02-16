@@ -1,8 +1,10 @@
+
 /* COMMON STYLES */
 /* Body */
 body {
     font-family: "Raleway", sans-serif;
     padding: 0 28px;
+    min-width:992px;
     max-width: 1400px;
 }
 /* Titles h1 to h6 */
@@ -371,20 +373,36 @@ footer ul {
     padding:0;
 }
 
-
-/* ----- test -----*/
-/* pour l'interface responsive :*/
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 /* ----- TABLET VERSION ----- */
-@media screen and (max-width=991px) and (min-width=768px) {
+@media (max-width:991px) and (min-width:768px) {
+    body {
+        max-width: 991px;
+        min-width: 768px;
+    }
     .cards-blocs-container {
-        flex-direction:column;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .accomodations {
+        height:75%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .popular {
+        margin-top: 15px;
+        height: 25%;
+        width: 100%;
+    }
+    .popular-cards-container {
+        flex-direction: row;
+    }
+    .activities-container {
+        margin-top: 30px;
     }
     
 }
-
 /* ----- MOBILE VERSION ----- */
+@media (max-width:768px) {
+
+}
