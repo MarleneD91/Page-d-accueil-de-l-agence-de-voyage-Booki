@@ -4,7 +4,6 @@ body {
     font-family: "Raleway", sans-serif;
     padding: 0 28px;
     max-width: 1400px;
-    min-width: 992px;
 }
 /* Titles h1 to h6 */
 h1 {
@@ -25,7 +24,9 @@ h3 {
 }
 h4 {
     font-size: 0.9em;
+    font-weight: 700;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 h5 {
     line-height: 0.5em;
@@ -131,6 +132,7 @@ main {
 .f-icon {
     color:#0065FC;
     margin-right: 8px;
+    font-size: 1.2em;
 }
 /*mouse hover : light blue background*/
 .filters-list li:hover{
@@ -164,9 +166,9 @@ main {
 }
 /* Price p shaping*/
 .price {
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 500;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
 }
 /* Notation stars shaping & alignment */
 .notation {
@@ -269,6 +271,7 @@ main {
     flex-direction: column;
     justify-content:space-around;
     padding: 10px;
+    height:90%;
 }
 /* Shaping of cards */
 .popular-cards {
@@ -278,9 +281,16 @@ main {
     border-radius: 18px;
     padding: 5px;
     margin: 10px;
+    flex: 33%;
     display:flex;
     flex-direction: row;
     height: 120px;
+}
+.popular-cards-container a{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;    
 }
 .popular-cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -297,8 +307,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 5px;
-    line-height: 1em;
-    padding:0 2px;
+    line-height: 0.8em;
+    padding: 2px 1px;
 }
 
 
@@ -311,16 +321,17 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     margin-top:10px;
 }
 .activities-cards {
-    margin: 16px 0;
+    margin: 16px 22px 16px 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 18px;
     height:372px;
-    width: 270px;
+    /*width: 220px;*/
+    flex:20%;
 }
 .activities-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -334,9 +345,10 @@ main {
 }
 .activities h4 {
     margin-left: 8px;
-    line-height: 2px;
-    padding : 2px;
 }
+.last-card {
+    margin-right:0;
+} 
 
 /*FOOTER*/
 footer {
@@ -350,15 +362,15 @@ footer {
     line-height: 2em;
 }
 .footer-section {
-    margin-right: 150px;
     margin-left: 25px;
+    flex:33%;
 }
 footer ul {
-    width: 200px;
+    width: 100%;
     list-style-type: none;
     padding:0;
-
 }
+
 
 /* ----- test -----*/
 /* pour l'interface responsive :*/
@@ -368,5 +380,11 @@ main {
     justify-content: space-between;
 }
 /* ----- TABLET VERSION ----- */
+@media screen and (max-width=991px) and (min-width=768px) {
+    .cards-blocs-container {
+        flex-direction:column;
+    }
+    
+}
 
 /* ----- MOBILE VERSION ----- */
