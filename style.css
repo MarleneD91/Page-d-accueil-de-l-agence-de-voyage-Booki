@@ -397,7 +397,7 @@ footer ul {
 }
 
 /* ----- TABLET VERSION ----- */
-@media screen and (max-width:991px) and (min-width:768px) {
+@media only screen and (max-width:991px) and (min-width:768px) {
     body {
         max-width: 991px;
         min-width: 768px;
@@ -494,34 +494,38 @@ footer ul {
     body {
         margin: 0;
         padding: 0;
-        width: 767px;
+        min-width: 0;
+        max-width: 767px;
     }
     header {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding:0;
-        margin:20px 0;
+        padding: 15px 0;
+        border-bottom: 3px solid #D9D9D9;
     }
     .logo {
         margin-bottom: 50px;
-        margin-top: 20px;    
+        margin-top: 20px; 
+        height: 25px;
+        width: 70px;
     }
     nav a{
-        padding: 56px 35px 10px 35px;
-        
+        padding: 56px 35px 16px 35px;
+        width:50%;       
     }
-    nav a:hover{
-        border-top:none;
+    /* !! No mouse:hover exists on mobile, instead use :active !! */
+    nav a:active { 
+        color: #0065FC;
         border-bottom:3px solid #0065FC;
         color:#0065FC;
     }
-    h1, h2, h3, h4, h5 {
+    /*h1, h2, h3, h4, h5 {
         line-break: auto;
     }
     .search {
         justify-content:center;
-        /*width:90%;*/
+        width:90%;
     }
     .search p {
         display:none;
@@ -538,6 +542,7 @@ footer ul {
     .filters-list {
         flex-wrap: wrap;
     }
+    /*
     .cards-blocs-container {
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -556,21 +561,22 @@ footer ul {
         width: 100%;   
     }
     .accomodations-cards {
-        /*width: 100%;*/
+        width: 100%;
     }
     .popular {
         margin-top: 15px;
-        /*width: 100%;*/
+        width: 100%;
     }
     .popular-cards-container {
         align-items: center;
-        /*width: 100%;*/
+        width: 100%;
     }
     .activities {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
+    */
     footer {
         flex-direction: column;
         padding-right:0;
