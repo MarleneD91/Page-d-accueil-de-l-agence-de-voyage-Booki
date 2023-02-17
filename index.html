@@ -5,6 +5,7 @@
 
         <title>Booki, pour des vacances de rêve!</title>
         <link rel="stylesheet" href="style.css"> <!--feuille de style CSS-->
+        <link rel="shortcut icon" href="/Images-Booki/favicon-16x16.png"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"> <!--lien pour le kit d'icônes-->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
@@ -36,8 +37,8 @@
             <!--Search section (input form)-->
             <form action="/search-inputs" class="search">
                 <i class="location fa-solid fa-location-dot"></i>
-                <input type="search" id="search-input" name="search-input" value="Marseille, France">
-                <button class="search-button"><i class="search-icon fa-solid fa-magnifying-glass"></i>Rechercher</button>
+                <input type="search" id="search-input" name="search-input" placeholder="Marseille, France">
+                <button class="search-button"><i class="search-icon fa-solid fa-magnifying-glass"></i><p>Rechercher</p></button>
             </form>
             
 
@@ -45,10 +46,10 @@
             <section class="filters">
                 <h3 class="filters-title">Filtres</h3>
                 <ul class="filters-list">
-                    <li><i class="f-icon fa-solid fa-money-bill-wave"></i>Economique</li>
-                    <li><i class="f-icon fa-solid fa-person"></i>Familial</li>
-                    <li><i class="f-icon fa-solid fa-heart"></i>Romantique</li>
-                    <li><i class="f-icon fa-solid fa-dog"></i>Animaux autorisés</li>
+                    <li><i class="f-icon fa-solid fa-money-bill-wave"></i><p>Economique</p></li>
+                    <li><i class="f-icon fa-solid fa-person"></i><p>Familial</p></li>
+                    <li><i class="f-icon fa-solid fa-heart"></i><p>Romantique</p></li>
+                    <li><i class="f-icon fa-solid fa-dog"></i><p class="animals">Animaux autorisés</p></li>
                 </ul>
             </section>
         
@@ -68,8 +69,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
                             <div class="accomodations-options">
+                                <div class="options-captions">
                                     <h4>Auberge La Canebière</h4>
                                     <p class="price">Nuit à partir de 25€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -84,8 +87,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port">
                             <div class="accomodations-options">
-                                <h4>Hôtel du port</h4>
-                                <p class="price">Nuit à partir de 52€</p>
+                                <div class="options-captions">
+                                    <h4>Hôtel du port</h4>
+                                    <p class="price">Nuit à partir de 52€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -100,8 +105,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                             <div class="accomodations-options">
-                                <h4>Hôtel Les mouettes</h4>
-                                <p class="price">Nuit à partir de 76€</p>
+                                <div class="options-captions">
+                                    <h4>Hôtel Les mouettes</h4>
+                                    <p class="price">Nuit à partir de 76€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -116,8 +123,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             <div class="accomodations-options">
-                                <h4>Hôtel de la mer</h4>
-                                <p class="price">Nuit à partir de 46€</p>
+                                <div class="options-captions">
+                                    <h4>Hôtel de la mer</h4>
+                                    <p class="price">Nuit à partir de 46€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -132,8 +141,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                             <div class="accomodations-options">
-                                <h4>Auberge Le Panier</h4>
-                                <p class="price">Nuit à partir de 23€</p>
+                                <div class="options-captions">
+                                    <h4>Auberge Le Panier</h4>
+                                    <p class="price">Nuit à partir de 23€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -148,8 +159,10 @@
                         <div class="accomodations-cards">
                             <img src="Images-Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                             <div class="accomodations-options">
-                                <h4>Hôtel chez Amina</h4>
-                                <p class="price">Nuit à partir de 96€</p>
+                                <div class="options-captions">
+                                    <h4>Hôtel chez Amina</h4>
+                                    <p class="price">Nuit à partir de 96€</p>
+                                </div>
                                 <div class="notation">
                                     <i class="blue-star fa-solid fa-star"></i>
                                     <i class="blue-star fa-solid fa-star"></i>
@@ -233,25 +246,25 @@
                 <h3>Activités à Marseille</h3>
                 <div class="activities" id="activities">
                     <div class="activities-cards">
-                        <a href="#Vieux-Port"></a>
+                        <a href="#Vieux-Port">
                             <img src="Images-Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
                             <h4>Vieux-Port</h4>
                         </a>
                     </div>
                     <div class="activities-cards">
-                        <a href="#Fort-de-Pomègues"></a>
+                        <a href="#Fort-de-Pomègues">
                             <img src="Images-Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                             <h4>Fort de Pomègues</h4>
                         </a>
                     </div>
                     <div class="activities-cards">
-                        <a href="#Parc-national-des-Calanques"></a>
+                        <a href="#Parc-national-des-Calanques">
                             <img src="Images-Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
                             <h4>Parc national des Calanques</h4>
                         </a>
                     </div>
                     <div class="activities-cards last-card">
-                        <a href="#Notre-Dame-de-la-Garde"></a>
+                        <a href="#Notre-Dame-de-la-Garde">
                             <img src="Images-Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                             <h4>Notre-Dame-de-la-Garde</h4>
                         </a>
