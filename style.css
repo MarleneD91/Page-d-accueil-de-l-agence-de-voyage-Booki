@@ -397,10 +397,11 @@ footer ul {
 }
 
 /* ----- TABLET VERSION ----- */
-@media (max-width:991px) and (min-width:768px) {
+@media screen and (max-width:991px) and (min-width:768px) {
     body {
         max-width: 991px;
         min-width: 768px;
+        padding: 0 15px 0 0;
     }
     nav a:hover{
         border:none;
@@ -408,57 +409,86 @@ footer ul {
     }    
     .filters-list {
         flex-wrap: nowrap;
+        padding-left:0;
     }
     .filters-list li {
         margin:10px;
-        padding: 10px 10px;
-        flex: 15%;
+        padding: 15px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         height: 15px;
     }
-    .animals {
-        width : 130px;
-    }
     .cards-blocs-container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
+    .price {
+        margin-top: 3px;
+    }
+    .notation {
+        padding-bottom: 0;
+    }
     .accomodations {
-        height:75%;
+        height:72%;
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .accomodations-cards-container {
-        padding: 0;
         justify-content: space-around;
+        height: 80%;
+    }
+    .accomodations-cards a {
+        height: 50%;
+    }
+    .accomodations-cards {
+        height: 90%;
+    }
+    .options-captions {
+        height:70%;
+    }
+    .more p {
+        margin: 10px 20px;
     }
     .popular {
-        margin-top: 15px;
-        height: 25%;
+        margin: 10px 0;
+        height: 28%;
         width: 100%;
     }
+    .popular-title-and-icon {
+        margin: 5px 15px 10px 20px;
+        height: 10%;
+    }
     .popular-cards {
-        flex:30%;
-        height:120px;
+        height: 90%;
+        width: 30%;
+        margin: 0;
+    }
+    .popular-options {
+        line-height: 0.8em;
     }
     .popular-cards-container {
         flex-direction: row;
+        justify-content: space-around;
+        width: 95%;
+        margin-left: 15px;
     }
     .activities-container {
-        margin-top: 30px;
+        padding-top: 20px;
     }
+    .activities {
+        height: 250px;
+    } 
     .activities-cards {
-        height: 300px;
+        height: 90%;
     }
     .activities-cards img {
-        height: 250px;
+        height: 75%;
     }
-    
 }
+
 /* ----- MOBILE VERSION ----- */
 @media only screen and (max-width:767px) {
     body {
