@@ -22,16 +22,14 @@ h2 {
     line-height: 18px;
 }
 h3 {
-    font-weight: 700;
-    font-size: 1em;
     line-height: 14px;
     margin: 0 7px;
 }
 h4 {
     font-size: 0.9em;
     font-weight: 700;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    margin-top: 0.35em;
 }
 h5 {
     line-height: 0.5em;
@@ -82,13 +80,12 @@ main {
     margin-bottom: 12px;
 }
 .location {
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     padding: 12px 15px;
     border-radius: 15px 0 0 15px;
 }
 #search-input {
     border:1px solid #D9D9D9;
-    border-right-color: #0065FC;
     padding-left:10px;
     width: 210px; 
     font-weight: 500; 
@@ -106,7 +103,7 @@ main {
     border-radius: 0 15px 15px 0;
     font-weight: 600;
 }
-.search p {
+.search-button-txt {
     color:white;
     line-height: 0.2em;
     padding: 0 8px 18px 8px;
@@ -115,7 +112,7 @@ main {
 }
 .search-icon {
     color: white;
-    visibility: hidden;
+    display: none;
 }
 
 /*FILTERS SECTION*/
@@ -173,7 +170,7 @@ main {
 }
 .info-icon {
     color:#0065FC;
-    border:1px solid #F2F2F2;
+    border:1px solid #D9D9D9;
     font-size: 10px;
     border-radius: 50%;
     padding: 6px 9px;
@@ -193,7 +190,7 @@ main {
 .price {
     font-size: 0.7em;
     font-weight: 500;
-    margin: 6px 0 16px 0;
+    margin: 2px 0 2px 0;
 }
 /* Notation stars shaping & alignment */
 .notation {
@@ -251,7 +248,7 @@ main {
 }
 /* Images */
 .accomodations-cards img {
-    height:45%;
+    height:55%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -261,7 +258,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 55%;
+    height: 45%;
 }
 /* display more button*/
 .more p{
@@ -344,7 +341,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
     margin-top:10px;
 }
 .activities-cards {
@@ -352,7 +348,7 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 18px;
-    height: 375px;px;
+    height: 375px;
     flex:20%;
 }
 .activities-cards:hover {
@@ -401,8 +397,7 @@ footer ul {
         padding: 0 15px 0 0;
     }
     nav a:hover{
-        border:none;
-        color: black;
+        visibility: hidden;
     }    
     .filters-list {
         flex-wrap: nowrap;
@@ -421,6 +416,7 @@ footer ul {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        height: 650px;
     }
     .price {
         margin-top: 3px;
@@ -476,13 +472,13 @@ footer ul {
         padding-top: 20px;
     }
     .activities {
-        height: 250px;
+        height: 275px;
     } 
     .activities-cards {
         height: 90%;
     }
     .activities-cards img {
-        height: 75%;
+        height: 80%;
     }
 }
 
@@ -507,18 +503,20 @@ footer ul {
         height: 25px;
         width: 70px;
     }
+    nav {
+        width:100%;
+        text-align:center;
+    }
     nav a{
-        padding: 56px 35px 16px 35px;
-        width:50%;       
+        padding: 56px 56px 16px 56px;      
     }
     /* !! No mouse:hover exists on mobile, instead use :active !! */
     nav a:active { 
         color: #0065FC;
         border-bottom:3px solid #0065FC;
-        color:#0065FC;
     }
     nav a:hover {
-        display:none;
+        visibility:hidden;
     }
     h1 {
         padding-top: 20px;
@@ -532,11 +530,11 @@ footer ul {
     .search {
         justify-content: center;
     }
-    .search p {
+    .search-button-txt {
         display: none;
     }
     .search-icon {
-        visibility: visible;
+        display: inline;
         padding: 7px;
     }
     .filters {
@@ -614,5 +612,4 @@ footer ul {
         padding-right:0;
         margin-right:0;
     }
-
 }
