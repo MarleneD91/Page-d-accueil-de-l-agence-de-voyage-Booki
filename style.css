@@ -505,10 +505,12 @@ footer ul {
     }
     nav {
         width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
-    nav a{
-        padding: 56px 56px 16px 56px;      
+    nav a {
+        padding: 20px 35px 0 35px;
     }
     /* !! No mouse:hover exists on mobile, instead use :active !! */
     nav a:active { 
