@@ -1,41 +1,17 @@
+/* -x-x-x-x- DESKTOP VERSION -x-x-x-x- */
 * { /* the * is for all elements!*/
     box-sizing: border-box; /* Magical ! NO overflow!! */
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding:0;
 }
 
-/* COMMON STYLES */
+/* ------------------ COMMON STYLES ------------------ */
+
 /* Body */
 body {
-    font-family: "Raleway", sans-serif;
-    padding: 0 28px;
-    min-width: 992px;
     max-width: 1400px;
-}
-/* Titles h1 to h6 */
-h1 {
-    font-size: 1.3em;
-    font-weight: 700;
-    line-height: 25px;
-}
-h2 {
-    font-size:0.9em;
-    font-weight: 400;
-    line-height: 18px;
-}
-h3 {
-    line-height: 14px;
-    margin: 0 7px;
-}
-h4 {
-    font-size: 0.9em;
-    font-weight: 700;
-    margin-bottom: 0.3em;
-    margin-top: 0.35em;
-}
-h5 {
-    line-height: 0.5em;
-    font-weight: 700;
-    font-size: 1.2em;
-    margin-bottom: 1.2em;
+    margin: 0 auto;
 }
 /* Links */
 a {
@@ -43,32 +19,48 @@ a {
     color: black;
 }
 
-/* HEADER */
+/* ------------------ SECTIONS ------------------ */
+
+/* +++ HEADER +++ */
 header {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 20px 60px 10px;
+    align-items: baseline;
+    padding: 70px 20px 30px 10px;
+    margin: 5px 20px 25px 20px;
 }
 /* Logo size */
-.logo {
-    width: 61px;
-    height: 19px;
+header .logo {
+    width: 79.3px;
+    height: 24.7px;
 }
 /* Nav menu */
-nav a {
-    padding: 56px 35px;
-    font-size: 13px;
+header nav a {
+    padding: 85px 35px;
+    font-size: 0.9em;
     font-weight: 500;
 }
-nav a:hover{ 
+header nav a:hover{ 
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 
-/* MAIN VALUES */
+/* +++ MAIN +++ */
 main {
-    padding: 0 10px 0 10px;
+    margin: 0 30px;
+}
+
+/* TITLES h1 AND h2 */
+h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 30px;
+}
+h2 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 50px;
 }
 
 /* SEARCH SECTION */
@@ -76,8 +68,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    margin-top: 30px;
-    margin-bottom: 12px;
+    margin: 15px 0;
 }
 .location {
     background-color: #F2F2F2;
@@ -98,7 +89,7 @@ main {
 }
 #search-input:focus::placeholder {
     color: transparent;
-    outline:none;
+    outline: none;
 }
 .search-button {
     background-color: #0065FC;
@@ -115,27 +106,26 @@ main {
 }
 .search-icon {
     color: white;
-    display: none;
+    font-size: 0;
+    visibility: hidden;
 }
-
 /*FILTERS SECTION*/
 .filters {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
     line-height: 15px;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 .filters-title {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.2em;
+    margin-right: 15px;
 }
 .filters-list {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
+    /*list-style-type: none;*/
     flex-wrap: wrap;
 }
 .filters-list li {
@@ -143,8 +133,6 @@ main {
     margin: 15px;
     border: 2px solid #D9D9D9;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     border-radius: 25px;
     font-weight: 600;
@@ -166,10 +154,10 @@ main {
 /*INFOBAR*/
 .infobar {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     font-weight: 400;
     font-size: 14px;
+    margin: 15px 0;
 }
 .info-icon {
     color: #0065FC;
@@ -180,18 +168,29 @@ main {
     margin-right: 10px; 
 }
 
-/* !MOST POPULAR + ACCOMODATIONS! BLOC CONTAINER & COMMON VALUES */
+/* TITLES */
+h3 { /* For accomodations, most popular and activities sections */
+    line-height: 14px;
+    font-size: 1.25em;
+} 
+h4 { /* For cards captions */
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    margin-top: 0.35em;
+}
+
+/* !!! MOST POPULAR + ACCOMODATIONS BLOC CONTAINER & COMMON VALUES !!! */
 .cards-blocs-container {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 35px;
-    margin-top: 20px;
+    margin: 25px 0;
     height: 560px;
 }
 /* Price p shaping*/
 .price {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 500;
     margin: 2px 0 2px 0;
 }
@@ -211,7 +210,7 @@ main {
 
 /* ACCOMODATIONS */
 .accomodations h3 {
-    margin: 15px 20px;
+    margin: 15px;
 }
 .accomodations {
     background-color: #F2F2F2;
@@ -221,7 +220,6 @@ main {
     height: 100%;
 }
 .accomodations-cards-container {
-    padding: 0 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -240,11 +238,11 @@ main {
     transition: 0.3s;
     border-radius: 18px;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 90%;
+    height: 95%;
 }
 .accomodations-cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -257,7 +255,7 @@ main {
 }
 /* Options */
 .accomodations-options {
-    margin-left: 5px;
+    margin-left: 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -283,19 +281,18 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px 15px 10px 20px;
+    margin: 15px;
     align-items: baseline;
 }
 .graph-icon {
     color: #0065FC;
-    font-size: 1em;
+    font-size: 1.4em;
 }
 /* Cards container*/
 .popular-cards-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px;
     height: 90%;
 }
 /* Shaping of cards */
@@ -315,7 +312,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;  
+    /*flex-wrap: nowrap;*/  
     width: 100%;  
 }
 .popular-cards:hover {
@@ -340,6 +337,9 @@ main {
 }
 
 /* ACTIVITIES SECTION */
+.activities-container {
+    margin: 45px 0;
+}
 .activities {
     display: flex;
     flex-direction: row;
@@ -351,8 +351,8 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 18px;
-    height: 375px;
-    flex: 20%;
+    height: 385px;
+    width: 25%;
 }
 .activities-cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -365,68 +365,67 @@ main {
     border-radius: 15px 15px 0 0;
 }
 .activities h4 {
-    margin-left: 8px;
+    margin: 8px;
 }
 .last-card {
     margin-right: 0;
 } 
 
-/*FOOTER*/
+/* +++ FOOTER +++ */
 footer {
     background-color: #F2F2F2;
-    padding: 15px 30px;
-    margin-top: 30px;
+    padding: 30px;
+    margin: 0 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     font-size: 0.9em;
     line-height: 2em;
 }
 .footer-section {
     margin-left: 25px;
-    flex: 33%;
+    width: 33%;
 }
+/* Titles */
+h5 {
+    line-height: 0.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+/* Lists */
 footer ul {
     width: 100%;
     list-style-type: none;
     padding:0;
 }
 
-/* ----- TABLET VERSION ----- */
-@media only screen and (max-width:991px) and (min-width:768px) {
+/* -x-x-x-x- TABLET VERSION -x-x-x-x- */
+@media only screen and (max-width:991px)  {
     body {
         max-width: 991px;
-        min-width: 768px;
-        padding: 0 15px 0 0;
     }
-    nav a:hover{
-        visibility: hidden;
+    /* erasing the mouse hover style */
+    header nav a:hover{ 
+        border-top: none;
+        color: black;
     }    
-    .filters-list {
-        flex-wrap: nowrap;
-        padding-left:0;
-    }
-    .filters-list li {
-        margin:10px;
-        padding: 15px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        height: 15px;
-    }
+    /* Changes for most-popular and accomodations containers */
     .cards-blocs-container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 650px;
     }
-    .price {
-        margin-top: 3px;
+    /* Changes for both containers cards captions */
+    h4 {
+        margin: 0;
     }
     .notation {
         padding-bottom: 0;
     }
+    .accomodations-options, .popular-options {
+        justify-content: space-around;
+    }
+    /* Changes for accomodations section */
     .accomodations {
         height:72%;
         width: 100%;
@@ -442,179 +441,197 @@ footer ul {
     .accomodations-cards {
         height: 90%;
     }
-    .options-captions {
-        height:70%;
-    }
     .more p {
         margin: 10px 20px;
     }
+    /* Changes for most popular section */
     .popular {
         margin: 10px 0;
-        height: 28%;
+        height: 30%;
         width: 100%;
     }
     .popular-title-and-icon {
-        margin: 5px 15px 10px 20px;
-        height: 10%;
+        margin: 15px 20px 5px 20px;
     }
     .popular-cards {
-        height: 90%;
+        height: 70%;
         width: 30%;
-        margin: 0;
-    }
-    .popular-options {
-        line-height: 0.8em;
     }
     .popular-cards-container {
         flex-direction: row;
         justify-content: space-around;
-        width: 95%;
-        margin-left: 15px;
+        width: 100%;
     }
+    /* Changes for activities section */
     .activities-container {
         padding-top: 20px;
     }
-    .activities {
-        height: 275px;
-    } 
     .activities-cards {
-        height: 90%;
+        height: 300px;
     }
     .activities-cards img {
-        height: 80%;
+        height: 75%;
     }
 }
 
-/* ----- MOBILE VERSION ----- */
+/* -x-x-x-x- MOBILE VERSION -x-x-x-x- */
 @media only screen and (max-width:767px) {
     body {
-        margin: 0;
-        padding: 0;
-        min-width: 0;
         max-width: 767px;
     }
+    /* Changes for header */
     header {
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        padding: 15px 0;
+        padding: 10px 0 0 0;
+        margin: 0;
         border-bottom: 3px solid #D9D9D9;
     }
-    .logo {
+    header .logo {
         margin-bottom: 50px;
         margin-top: 20px; 
-        height: 25px;
-        width: 70px;
     }
-    nav {
+    header nav {
         width: 100%;
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
     }
-    nav a {
-        padding: 20px 35px 0 35px;
+    header nav a {
+        padding: 20px 35px 20px 35px;
+        width: 50%;
+        text-align: center;
     }
-    /* !! No mouse:hover exists on mobile, instead use :active !! */
-    nav a:active { 
+    nav a:active { /* !! No mouse hover exists on mobile, instead use :active !! */
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
     }
-    nav a:hover {
-        visibility: hidden;
+    /* Main changes */
+    main {
+        margin: 0;
     }
+    /* Changes for h1 and h2 */
     h1 {
         padding-top: 20px;
     }
     h1, h2 {
-        margin: 10px 15px;
+        margin: 10px 20px;
     }
-    h3 {
-        font-size: 1.4em;
-    }
+    /* Changes for search bar */
     .search {
-        justify-content: center;
+        width: 90%;
+        margin: 30px;
+    }
+    #search-input {
+        width: 82%;
+    }
+    .search-button {
+        width: 10%;
     }
     .search-button-txt {
         display: none;
     }
     .search-icon {
-        display: inline;
+        visibility: visible;
+        font-size: 1em;
         padding: 7px;
     }
+    /* Changes for filters section */
     .filters {
         flex-direction: column;
         align-items: flex-start;
-        flex-wrap: wrap;
-        padding: 20px 15px;
+        margin: 20px;
     }
-    .filters-list {
-        padding-left: 2px;
+    .filters-list li {
+        width: 42%;
+        padding: 10px 15px;
+    }
+    .f-icon {
+        font-size: 1.4em;
     }
     .filters-list p {
-        font-size: 10px;
+        font-size: 0.9em;
     }
-    main {
-        padding: 0;
+    /* adding a left margin to the infobar */
+    .infobar {
+        margin-left: 15px;
     }
+    /* Changes for bloc container + h3 (commons)*/
     .cards-blocs-container {
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
         height: auto;
+        margin: 0 auto;
     }
+    h3 {
+        font-size: 1.4em;
+    }
+    /* Changes for most popular section */
     .popular {
         height: 30%;
-        width: 100%;
         border-radius: 0;
     }
     .popular-cards-container {
         flex-direction: column;
         padding: 18px;
     }
+    .popular-cards {
+        width: 100%;
+    }
     .popular-cards img {
-        width: 35%;
         height: 150px;
     }
+    /* Changes for accomodations section */
     .accomodations {
         background-color: white;
         height: 70%;
-        width: 100%;
     }
     .accomodations-cards-container {
         flex-direction: column;
-        flex-wrap: nowrap;
-        height: 90%;
     }
     .accomodations-cards-container a {
         width: 100%;
-        height: 15%;
     }
     .accomodations-cards img {
         height: 150px;
     }
+    .accomodations-options {
+        height: 75px;
+    }
     .more p {
         display: none;
     }
+    /* Changes for activities section */
     .activities-container {
         padding: 15px;
+        margin: 0 auto;
+    }
+    .activities-container h3 {
+        margin-left: 15px;
     }
     .activities {
         flex-direction: column;
+        padding: 15px;
     }
     .activities-cards {
-        margin: 15px;
+        width: 100%;
         height: 25%;
     }
     .activities-cards img {
-        height: 150px;
+        height: 180px;
     }
     .activities h4 {
-        margin: 15px;
+        margin: 20px;
     }
+    /* Changes for footer */
     footer {
         flex-direction: column;
-        padding-right: 0;
-        margin-right: 0;
+        margin: 0;
+    }
+    .footer-section {
+        margin: 25px;
+        width: 100%;
     }
 }
+
+/* -x-x-x-x- END OF THE CSS STYLING DOCUMENT -x-x-x-x- */
