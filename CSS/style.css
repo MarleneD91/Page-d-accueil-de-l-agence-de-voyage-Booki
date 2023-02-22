@@ -37,7 +37,7 @@ header .logo {
 }
 /* Nav menu */
 header nav a {
-    padding: 85px 35px;
+    padding: 83px 35px;
     font-size: 0.9em;
     font-weight: 500;
 }
@@ -518,7 +518,6 @@ footer ul {
     }
     /* Changes for search bar */
     .search {
-        width: 90%;
         margin: 30px;
     }
     #search-input {
