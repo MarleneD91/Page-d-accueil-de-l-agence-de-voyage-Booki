@@ -268,7 +268,7 @@ h4 { /* For cards captions */
     font-weight: 700;
 }
 
-/* MOST POPULAR SECTION */
+/* MOST POPULAR ARTICLE */
 .popular {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -313,7 +313,6 @@ h4 { /* For cards captions */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*flex-wrap: nowrap;*/  
     width: 100%;  
 }
 .popular-cards:hover {
@@ -404,7 +403,7 @@ footer ul {
     body {
         max-width: 991px;
     }
-    /* erasing the mouse hover style */
+    /* deleting the mouse hover style */
     header nav a:hover{ 
         border-top: none;
         color: black;
