@@ -281,7 +281,7 @@ h4 { /* For cards captions */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px;
+    margin: 10px 15px 12px 15px;
     align-items: baseline;
 }
 .graph-icon {
@@ -294,6 +294,7 @@ h4 { /* For cards captions */
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
+    margin-top: 10px;
 }
 /* Shaping of cards */
 .popular-cards {
@@ -539,21 +540,23 @@ footer ul {
     .filters {
         flex-direction: column;
         align-items: flex-start;
-        margin: 20px;
+        margin: 10px;
     }
     .filters-list li {
-        width: 42%;
+        width: 43%;
         padding: 10px 15px;
+        margin: 10px;
+        font-size:0.9em;
     }
     .f-icon {
         font-size: 1.4em;
     }
     .filters-list p {
-        font-size: 0.9em;
+        line-height: 1.2em;
     }
     /* adding a left margin to the infobar */
     .infobar {
-        margin-left: 15px;
+        margin: 15px;
     }
     /* Changes for bloc container + h3 (commons)*/
     .cards-blocs-container {
