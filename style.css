@@ -89,7 +89,7 @@ h2 {
 }
 #search-input:focus::placeholder {
     color: transparent;
-    outline: none;
+    border: transparent;
 }
 .search-button {
     background-color: #0065FC;
